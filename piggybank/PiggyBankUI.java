@@ -59,7 +59,7 @@ public class PiggyBankUI {
         });
 
         ViewDepositAmount.addActionListener(e ->{
-            
+            double = 
         })
 
         panel.add(new JLabel("Enter Amount:"));

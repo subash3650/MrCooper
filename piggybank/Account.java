@@ -6,9 +6,9 @@ class Account{
     private ArrayList<Double> depo = new ArrayList<>();
     private ArrayList<Double> draw = new ArrayList<>();
 
-    public Account() {
-        this.balance = 0.0;
-    }
+    // public Account() {
+    //     this.balance = 0.0;
+    // }
 
     public double getBalance() {
         return balance;
