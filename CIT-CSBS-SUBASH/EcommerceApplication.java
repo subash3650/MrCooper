@@ -11,7 +11,7 @@ public class EcommerceApplication {
         System.out.println("\nWelcome to the E-Commerce System!");
 
         while (true) {
-            System.out.println("\n1️.Register\n2️ Login\n3️⃣ Exit");
+            System.out.println("\n1️.Register\n2️ Login\n3️ Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
 
@@ -26,7 +26,7 @@ public class EcommerceApplication {
                 String password = scanner.next();
 
                 users.add(new User(name, age, username, password));
-                System.out.println("✅ Registration successful!");
+                System.out.println("     Registration successful!");
 
             } else if (choice == 2) { 
                 System.out.print("Enter username: ");
@@ -43,15 +43,15 @@ public class EcommerceApplication {
                 }
 
                 if (loggedInUser != null) {
-                    System.out.println("✅ Login successful!");
+                    System.out.println(" Login successful!");
                     
                     while (true) {
-                        System.out.println("\n1️⃣ View Products\n2️⃣ Add to Cart\n3️⃣ View Cart\n4️⃣ Checkout\n5️⃣ Logout");
+                        System.out.println("\n1️ View Products\n2️ Add to Cart\n3️ View Cart\n4️ Checkout\n5️ Logout");
                         System.out.print("Choose an option: ");
                         int action = scanner.nextInt();
 
                         if (action == 1) {
-                            System.out.println("\n🛍️ Available Products:");
+                            System.out.println("\n Available Products:");
                             for (Item item : inventory) {
                                 System.out.println("- " + item.itemName + " ($" + item.amount + ")");
                             }
@@ -78,15 +78,15 @@ public class EcommerceApplication {
                                 }
                             }
                         } else if (action == 5) {
-                            System.out.println("👋 Logging out...");
+                            System.out.println("Logging out...");
                             break;
                         }
                     }
                 } else {
-                    System.out.println("❌ Invalid credentials!");
+                    System.out.println(" Invalid credentials!");
                 }
             } else if (choice == 3) {
-                System.out.println("🚪 Exiting...");
+                System.out.println(" Exiting...");
                 break;
             }
         }
